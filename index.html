@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Barcode-a-tron 3000</title>
+        <script src="jsbarcode.min.js"></script>
+        <style>
+            #barcode-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 10px; /* We print to pdf with no borders, but need a little space on the left */
+            }
+            
+            #barcode-container svg {
+                flex: 0 0 calc(25% - 8px); /* 4 items per row (25% width each) with gap consideration */
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                /* Prevent SVG from breaking across pages when printing */
+                page-break-inside: avoid;
+                break-inside: avoid;
+                padding: 0px 15px;
+            }
+
+            /* Add some print-specific styles */
+            @media print {
+                body {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                #barcode-container {
+                    width: 100%;
+                }
+
+                /* Ensure each SVG has enough space and doesn't break */
+                #barcode-container svg {
+                    margin-bottom: 15px; /* Add more space between rows for printing */
+                }
+                
+                /* Hide the controls when printing */
+                #controls {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="controls">
+            <marquee><h1 style="font-family: Comic Sans MS;">Barcode-a-tron 3000</h1></marquee>
+            <form>
+                <label for="barcodes-list">Barcodes:</label>
+                <textarea id="barcodes-list" name="barcodes">57302240527
+56677010616
+59749910396
+52099584023
+51049035540
+56959482109
+50793552677
+59344808503</textarea>
+                <button type="button" onclick="render()">Render</button>
+                <marquee>Don't worry, this area won't get printed!</marquee>
+                <hr>
+                <div>
+                    <label for="csv-file">Upload CSV export of Grist barcodes table:</label>
+                    <input type="file" id="csv-file" accept=".csv">
+                    <button type="button" onclick="parseCSV()">Parse CSV</button>
+                </div>
+                <div id="json-output-container" style="margin-top: 10px;">
+                    <pre id="json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
+                </div>
+                <div style="margin-top: 15px;">
+                    <label for="barcode-lookup">Lookup Barcode:</label>
+                    <input type="text" id="barcode-lookup" placeholder="Enter barcode to search" oninput="lookupBarcode()" onkeydown="preventFormSubmit(event)">
+                    <div id="lookup-result" style="margin-top: 10px; padding: 10px; border: 1px solid #ddd; display: none;"></div>
+                </div>
+            </form>
+        </div>
+        <div id="barcode-container">
+
+        </div>
+        <template id="barcode-template">
+            <svg class="barcode"
+                jsbarcode-format="upc"
+                jsbarcode-value=""
+                jsbarcode-textmargin="0"
+                jsbarcode-fontoptions="bold">
+                </svg>
+        </template>
+        <script>
+            // Load barcodes.csv on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                // Fetch the barcodes.csv file
+                fetch('./barcodes.csv')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(csvData => {
+                        // Parse the CSV data
+                        parseCSVData(csvData);
+                    })
+                    .catch(error => {
+                        console.log('Could not load initial barcodes.csv file:', error);
+                    });
+            });
+            
+            function render() {
+                const barcodes = document.getElementById("barcodes-list").value
+                    .split("\n")
+                    .map((barcode) => barcode.trim())
+                    .filter((barcode) => barcode.length > 0);
+                const barcodeContainer = document.getElementById("barcode-container");
+                barcodeContainer.innerHTML = "";
+                barcodes.forEach((barcode) => {
+                    const barcodeElement = document.getElementById("barcode-template").content.cloneNode(true).querySelector("svg");
+                    barcodeElement.setAttribute("jsbarcode-value", barcode);
+                    barcodeContainer.appendChild(barcodeElement);
+                });
+                JsBarcode(".barcode").init();
+            }
+            
+            function parseCSVData(csvData) {
+                const jsonOutput = document.getElementById('json-output');
+                const lines = csvData.split('\n');
+                const headers = lines[0].split(',');
+                
+                // Find column indices
+                const barcodeIndex = headers.findIndex(header => header.trim() === 'Barcode');
+                const nameIndex = headers.findIndex(header => header.trim() === 'Checkout name');
+                const priceIndex = headers.findIndex(header => header.trim() === 'Price');
+                const iconIndex = headers.findIndex(header => header.trim() === 'Checkout emoji');
+                
+                if (barcodeIndex === -1 || nameIndex === -1 || priceIndex === -1 || iconIndex === -1) {
+                    if (jsonOutput) {
+                        jsonOutput.textContent = 'Error: CSV file must contain Barcode, Checkout name, Price, and Checkout emoji columns';
+                    }
+                    return null;
+                }
+                
+                const result = {};
+                
+                // Start from index 1 to skip headers
+                for (let i = 1; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
+                    
+                    // Handle commas in quoted fields
+                    const values = [];
+                    let inQuotes = false;
+                    let currentValue = '';
+                    
+                    for (let j = 0; j < line.length; j++) {
+                        const char = line[j];
+                        
+                        if (char === '"' && (j === 0 || line[j-1] !== '\\')) {
+                            inQuotes = !inQuotes;
+                        } else if (char === ',' && !inQuotes) {
+                            values.push(currentValue);
+                            currentValue = '';
+                        } else {
+                            currentValue += char;
+                        }
+                    }
+                    values.push(currentValue); // Add the last value
+                    
+                    const barcode = values[barcodeIndex].trim();
+                    if (!barcode) continue;
+                    
+                    const name = values[nameIndex] ? values[nameIndex].trim() : '';
+                    const priceStr = values[priceIndex] ? values[priceIndex].trim() : '';
+                    const icon = values[iconIndex] ? values[iconIndex].trim() : '';
+                    
+                    // Convert price from £9.99 format to number
+                    let price = 0;
+                    if (priceStr) {
+                        const priceMatch = priceStr.match(/[0-9.]+/);
+                        if (priceMatch) {
+                            price = parseFloat(priceMatch[0]);
+                        }
+                    }
+                    
+                    result[barcode] = {
+                        name: name,
+                        price: price,
+                        icon: icon
+                    };
+                }
+                
+                // Format and display the JSON if the output element exists
+                if (jsonOutput) {
+                    jsonOutput.textContent = JSON.stringify(result, null, 2);
+                }
+                
+                // Store the parsed data in a global variable for lookup
+                window.barcodeData = result;
+                
+                return result;
+            }
+            
+            function parseCSV() {
+                const fileInput = document.getElementById('csv-file');
+                
+                if (!fileInput.files.length) {
+                    alert('Please select a CSV file first');
+                    return;
+                }
+                
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                
+                reader.onload = function(event) {
+                    const csvData = event.target.result;
+                    parseCSVData(csvData);
+                    
+                    // Clear the lookup field and result
+                    document.getElementById('barcode-lookup').value = '';
+                    document.getElementById('lookup-result').style.display = 'none';
+                };
+                
+                reader.onerror = function() {
+                    const jsonOutput = document.getElementById('json-output');
+                    jsonOutput.textContent = 'Error reading the file';
+                };
+                
+                reader.readAsText(file);
+            }
+            
+            function preventFormSubmit(event) {
+                // Prevent form submission when Enter key is pressed
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    // Select all text in the input field for easy overwriting with next scan
+                    event.target.select();
+                    return false;
+                }
+            }
+            
+            function lookupBarcode() {
+                const lookupInput = document.getElementById('barcode-lookup');
+                const lookupResult = document.getElementById('lookup-result');
+                const barcode = lookupInput.value.trim();
+                // parity checks are for cowards
+                const barcodeWithoutLastChar = barcode.slice(0, -1);    
+                
+                // Hide result if input is empty
+                if (!barcode) {
+                    lookupResult.style.display = 'none';
+                    return;
+                }
+                
+                // Check if we have parsed data
+                if (!window.barcodeData) {
+                    lookupResult.innerHTML = '<p style="color: #999;">Please upload and parse a CSV file first</p>';
+                    lookupResult.style.display = 'block';
+                    return;
+                }
+                
+                // Look for the barcode in our data
+                if (window.barcodeData[barcodeWithoutLastChar]) {
+                    const item = window.barcodeData[barcodeWithoutLastChar];
+                    lookupResult.innerHTML = `
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 2em; margin-right: 10px;">${item.icon}</span>
+                            <div>
+                                <h3 style="margin: 0;">${item.name}</h3>
+                                <p style="margin: 5px 0 0 0;">Price: £${item.price.toFixed(2)}</p>
+                                <p style="margin: 5px 0 0 0;">Barcode: ${barcode}</p>
+                            </div>
+                        </div>
+                    `;
+                    lookupResult.style.display = 'block';
+                } else {
+                    lookupResult.innerHTML = `<p style="color: #d9534f;">No item found with barcode: ${barcode}</p>`;
+                    lookupResult.style.display = 'block';
+                }
+            }
+        </script>
+    </body>
+</html>
