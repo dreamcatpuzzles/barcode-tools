@@ -46,36 +46,33 @@
     <body>
         <div id="controls">
             <marquee><h1 style="font-family: Comic Sans MS;">Barcode-a-tron 3000</h1></marquee>
-            <form>
-                <h2>Barcode lookup zone</h2>
-                <div>
-                    <label for="barcode-lookup">Lookup Barcode:</label>
-                    <input type="text" id="barcode-lookup" placeholder="Enter barcode to search" oninput="lookupBarcode()" onkeydown="preventFormSubmit(event)">
-                    <div id="lookup-result" style="margin-top: 10px; padding: 10px; border: 1px solid #ddd; display: none;"></div>
-                </div>
-            </form>
+            <h2>Barcode lookup zone</h2>
+            <div>
+                <label for="barcode-lookup">Lookup Barcode:</label>
+                <input type="text" id="barcode-lookup" placeholder="Enter barcode to search" oninput="lookupBarcode()" onkeydown="preventFormSubmit(event)">
+                <div id="lookup-result" style="margin-top: 10px; padding: 10px; border: 1px solid #ddd; display: none;"></div>
+            </div>
             <hr />
-            <form>
-                <h2>CSV to JSON zone</h2>
-                <div>
-                    <label for="csv-file">Upload CSV export of Grist barcodes table:</label>
-                    <input type="file" id="csv-file" accept=".csv">
-                    <button type="button" onclick="parseCSV()">Parse CSV</button>
-                </div>
-                <h3>barcodes.json</h3>
-                <div id="barcodes-json-output-container" style="margin-top: 10px;">
-                    <pre id="barcodes-json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
-                </div>
-                <h3>offers.json</h3>
-                <div id="offers-json-output-container" style="margin-top: 10px;">
-                    <pre id="offers-json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
-                </div>
-            </form>
+            <h2>CSV to JSON zone</h2>
+            <div>
+                <label for="csv-file">Upload CSV export of Grist barcodes table:</label>
+                <input type="file" id="csv-file" accept=".csv">
+                <button type="button" onclick="parseCSV()">Parse CSV</button>
+            </div>
+            <h3>barcodes.json</h3>
+            <div id="barcodes-json-output-container" style="margin-top: 10px;">
+                <pre id="barcodes-json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
+                <button onclick="copyToClipboard('barcodes-json-output')" style="margin-top: 5px;">Copy to Clipboard</button>
+            </div>
+            <h3>offers.json</h3>
+            <div id="offers-json-output-container" style="margin-top: 10px;">
+                <pre id="offers-json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
+                <button onclick="copyToClipboard('offers-json-output')" style="margin-top: 5px;">Copy to Clipboard</button>
+            </div>
             <hr />
-            <form>
-                <h2>Barcode rendering zone</h2>
-                <label for="barcodes-list">Barcodes:</label>
-                <textarea id="barcodes-list" name="barcodes">57302240527
+            <h2>Barcode rendering zone</h2>
+            <label for="barcodes-list">Barcodes:</label>
+            <textarea id="barcodes-list" name="barcodes">57302240527
 56677010616
 59749910396
 52099584023
@@ -83,8 +80,7 @@
 56959482109
 50793552677
 59344808503</textarea>
-                <button type="button" onclick="render()">Render</button>
-            </form>
+            <button type="button" onclick="render()">Render</button>
             <marquee>Don't worry, this area won't get printed!</marquee>
             <hr />
         </div>
@@ -312,6 +308,30 @@
                     lookupResult.innerHTML = `<p style="color: #d9534f;">No item found with barcode: ${barcode}</p>`;
                     lookupResult.style.display = 'block';
                 }
+            }
+            function copyToClipboard(elementId) {
+                const element = document.getElementById(elementId);
+                if (!element) return;
+                
+                // Create a temporary textarea
+                const textarea = document.createElement('textarea');
+                textarea.value = element.textContent;
+                document.body.appendChild(textarea);
+                
+                // Select and copy the text
+                textarea.select();
+                document.execCommand('copy');
+                
+                // Clean up
+                document.body.removeChild(textarea);
+                
+                // Show feedback
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
             }
         </script>
     </body>
