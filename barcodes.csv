@@ -1,159 +1,163 @@
-Human Id,Puzzle,Stickers?,Notes,Barcode,Duplicate Check,Checkout name,Checkout emoji,Price
-Pringles - APPLE & ANCHOVY,Pringles,true,,57302240527,,Pringles - Apple & Anchovy,🍏, £9.99
-Pringles - BACON & BLUEBERRY,Pringles,true,,56677010616,,Pringles - Bacon & Blueberry,🥓, £9.99
-Pringles - BLACK PUDDING & RUM,Pringles,true,,59749910396,,Pringles - Black Pudding & Rum,🍮, £9.99
-Pringles - BLACKCURRANT,Pringles,true,,52099584023,,Pringles - Blackcurrant,🍇, £9.99
-Pringles - BUBBLEGUM,Pringles,true,,51049035540,,Pringles - Bubblegum,🍬, £9.99
-Pringles - CARROT & CHIVE,Pringles,true,,56959482109,,Pringles - Carrot & Chive,🥕, £9.99
-Pringles - CARROTS & DAIKON,Pringles,true,,50793552677,,Pringles - Carrots & Daikon,🥕, £9.99
-Pringles - CHILLI & CARDAMOM,Pringles,true,,59344808503,,Pringles - Chilli & Cardamom,🌶️, £9.99
-Pringles - CINAMMON & REDCURRANT,Pringles,true,,53719101946,,Pringles - Cinammon & Redcurrant,✨, £9.99
-Pringles - EGG & CRESS,Pringles,true,,51604998593,,Pringles - Egg & Cress,🥚, £9.99
-Pringles - GANGLAND,Pringles,true,,55715376075,,Pringles - Gangland,🕵️, £9.99
-Pringles - HAM & CHEESE,Pringles,true,,51826487992,,Pringles - Ham & Cheese,🍖, £9.99
-Pringles - KIWI & KOALA,Pringles,true,,59993259495,,Pringles - Kiwi & Koala,🥝, £9.99
-Pringles - MARMOT,Pringles,true,,51052505002,,Pringles - Marmot,🐿️, £9.99
-Pringles - NUT,Pringles,true,,55950226934,,Pringles - Nut,🥜, £9.99
-Pringles - OLIVE & RICOTTA,Pringles,true,,58174194722,,Pringles - Olive & Ricotta,🫒, £9.99
-Pringles - PEAR & GIN,Pringles,true,,52330177833,,Pringles - Pear & Gin,🍐, £9.99
-Pringles - PLOUGHMAN'S SANDWICH,Pringles,true,,54666953450,,Pringles - Ploughman's Sandwich,🥪, £9.99
-Pringles - PORK & PINEAPPLE,Pringles,true,,52162349818,,Pringles - Pork & Pineapple,🐖, £9.99
-Pringles - RED HERRING,Pringles,true,,51714639799,,Pringles - Red Herring,🐟, £9.99
-Pringles - SALTED MANGO,Pringles,true,,55955614963,,Pringles - Salted Mango,🥭, £9.99
-Pringles - SMURF,Pringles,true,,53552222562,,Pringles - Smurf,👤, £9.99
-Pringles - SOY SAUCE,Pringles,true,,58463963615,,Pringles - Soy Sauce,🍶, £9.99
-Pringles - STICKY TOFFEE PUDDING,Pringles,true,,53233136428,,Pringles - Sticky Toffee Pudding,🍮, £9.99
-Pringles - STRAWBERRY & SHALLOT,Pringles,true,,58858307222,,Pringles - Strawberry & Shallot,🍓, £9.99
-Pringles - SWEET POTATO & SWEET PEA,Pringles,true,,56459173249,,Pringles - Sweet Potato & Sweet Pea,🍠, £9.99
-Pringles - VANILLA,Pringles,true,,52345396642,,Pringles - Vanilla,🍦, £9.99
-Tea - Real 1,Barcode Tea Halves,false," Needs custom, larger barcode",73471250365,,,☕, £9.99
-Tea - Real 2,Barcode Tea Halves,false," Needs custom, larger barcode",73794136875,,,☕, £9.99
-Tea - Real 3,Barcode Tea Halves,false," Needs custom, larger barcode",79562546486,,,☕, £9.99
-Tea - Fake 1,Barcode Tea Halves,false," Needs custom, larger barcode",78655479036,,,❌, £9.99
-Tea - Fake 2,Barcode Tea Halves,false," Needs custom, larger barcode",75254280275,,,❌, £9.99
-Tea - Fake 3,Barcode Tea Halves,false," Needs custom, larger barcode",70109130377,,,❌, £9.99
-Toy - Mouse,Stuffed toy bargain bin,true,,18318168487,,Mouse,🐁, £9.99
-Toy - Kiwi,Stuffed toy bargain bin,true,,18219486339,,Kiwi,🥝, £9.99
-Toy - Bat,Stuffed toy bargain bin,true,,10041577460,,Bat,🦇, £9.99
-Toy - Dog with sweatband,Stuffed toy bargain bin,false,,16372542937,,Dog with sweatband,🐶, £9.99
-Toy - Frog,Stuffed toy bargain bin,false,,15072691904,,Frog,🐸, £9.99
-Toy - St. Bernard,Stuffed toy bargain bin,false,,11309645918,,St. Bernard,🐕, £9.99
-Toy - Blue duck,Stuffed toy bargain bin,false,,17022392397,,Blue duck,🦆, £9.99
-Toy - Fox shaped like racoon,Stuffed toy bargain bin,false,,15600293757,,Fox shaped like racoon,🦊, £9.99
-Toy - Macaw,Stuffed toy bargain bin,false,,10105161154,,Macaw,🦜, £9.99
-Toy - Multicoloured Fish,Stuffed toy bargain bin,false,,19202467553,,Multicoloured Fish,🐠, £9.99
-Toy - Rabbit with rabbit feet (yellow),Stuffed toy bargain bin,false,,13623827249,,Rabbit with rabbit feet (yellow),🐰, £9.99
-Toy - Rabbit with rabbit feet (green),Stuffed toy bargain bin,false,,12701699288,,Rabbit with rabbit feet (green),🐇, £9.99
-Toy - Very soft dog,Stuffed toy bargain bin,false,,15602453187,,Very soft dog,🧸, £9.99
-Toy - Big Kangaroo,Stuffed toy bargain bin,false,,13746422312,,Big Kangaroo,🦘, £9.99
-Toy - Elephant with straggly hair,Stuffed toy bargain bin,false,,14612665041,,Elephant with straggly hair,🐘, £9.99
-Toy - Purple Poodle,Stuffed toy bargain bin,false,,19093346029,,Purple Poodle,🐩, £9.99
-Toy - Soft Meercat,Stuffed toy bargain bin,false,,10543266723,,Soft Meercat,🦦, £9.99
-Toy - Tiger,Stuffed toy bargain bin,false,,14600254365,,Tiger,🐅, £9.99
-Toy - Husky,Stuffed toy bargain bin,false,,18665582427,,Husky,🐺, £9.99
-Toy - Black Dog Merlin,Stuffed toy bargain bin,false,,11273524340,,Black Dog Merlin,🖤, £9.99
-Toy - Ram with heart tattoo,Stuffed toy bargain bin,false,,18921576033,,Ram with heart tattoo,🐏, £9.99
-Toy - Pig looking up and left,Stuffed toy bargain bin,false,,15550756952,,Pig looking up and left,🐷, £9.99
-Toy - Seal with bad face,Stuffed toy bargain bin,false,,13346405325,,Seal with bad face,🦭, £9.99
-Toy - Aviation Bear,Stuffed toy bargain bin,false,,16506819134,,Aviation Bear,🐻, £9.99
-Toy - Lion,Stuffed toy bargain bin,false,,19782458776,,Lion,🦁, £9.99
-Toy - Royal Mail Bear,Stuffed toy bargain bin,false,,11822543264,,Royal Mail Bear,📮, £9.99
-Toy - Tomato with face,Stuffed toy bargain bin,false,,10042909025,,Tomato with face,🍅, £9.99
-Toy - My heart belongs to you rabbit,Stuffed toy bargain bin,false,,14409732165,,My heart belongs to you rabbit,❤️, £9.99
-Toy - Green-blue ty bear (big),Stuffed toy bargain bin,false,,18500893815,,Green-blue ty bear (big),💚, £9.99
-Toy - 200TY bear (big),Stuffed toy bargain bin,false,,14755411915,,200TY bear (big),💯, £9.99
-Toy - Dog with collar,Stuffed toy bargain bin,false,,15224051649,,Dog with collar,🐕‍🦺, £9.99
-Toy - Dog with tongue out,Stuffed toy bargain bin,false,,13729737107,,Dog with tongue out,😛, £9.99
-Toy - Rabbit with wallpaper feet,Stuffed toy bargain bin,false,,18343934310,,Rabbit with wallpaper feet,🐰, £9.99
-Toy - Small kangaroo,Stuffed toy bargain bin,false,,19423502079,,Small kangaroo,🦘, £9.99
-Toy - Pig sitting sideways,Stuffed toy bargain bin,false,,15740894304,,Pig sitting sideways,🐖, £9.99
-Toy - Dalmatian,Stuffed toy bargain bin,false,,12040798438,,Dalmatian,🐾, £9.99
-Toy - Rabbit with wallpaper feet 2,Stuffed toy bargain bin,false,,17014156913,,Rabbit with wallpaper feet 2,🐇, £9.99
-Toy - Pink rabbit,Stuffed toy bargain bin,false,,18537522800,,Pink rabbit,🩷, £9.99
-Toy - Mangy tiger,Stuffed toy bargain bin,false,,10776908525,,Mangy tiger,🐅, £9.99
-Toy - Frilly Cow,Stuffed toy bargain bin,false,,17077164458,,Frilly Cow,🐄, £9.99
-Toy - Boxing Gorilla,Stuffed toy bargain bin,false,,11374086438,,Boxing Gorilla,🦍, £9.99
-Toy - Black ape with leather appendages,Stuffed toy bargain bin,false,,14935431938,,Black ape with leather appendages,🖤, £9.99
-Toy - Monkey with bow and shorts,Stuffed toy bargain bin,false,,10647413587,,Monkey with bow and shorts,🐒, £9.99
-Toy - Dog from basket,Stuffed toy bargain bin,false,,19068624986,,Dog from basket,🧺, £9.99
-Toy - Puppy from basket 1,Stuffed toy bargain bin,false,,16551862248,,Puppy from basket 1,🐶, £9.99
-Toy - Puppy from basket 2,Stuffed toy bargain bin,false,,14050876911,,Puppy from basket 2,🐾, £9.99
-Toy - Small white bear with red ribbon,Stuffed toy bargain bin,false,,17380424546,,Small white bear with red ribbon,🤍, £9.99
-Toy - Soft orange-brown bear with brown ribbon,Stuffed toy bargain bin,false,,11247774458,,Soft orange-brown bear with brown ribbon,🧡, £9.99
-Toy - Soft cream bear with red ribbon,Stuffed toy bargain bin,false,,10801140033,,Soft cream bear with red ribbon,💛, £9.99
-Toy - Blue ty bear,Stuffed toy bargain bin,false,,14565946562,,Blue ty bear,💙, £9.99
-Toy - Hard rock cafe honolulu bear,Stuffed toy bargain bin,false,,10758105679,,Hard rock cafe honolulu bear,🎸, £9.99
-Toy - Generic rabbit-bear with yellow bow,Stuffed toy bargain bin,false,,12811863583,,Generic rabbit-bear with yellow bow,🧸, £9.99
-Toy - Dirty cream bear,Stuffed toy bargain bin,false,,13877407251,,Dirty cream bear,🐻‍❄️, £9.99
-Toy - Bear in green dress,Stuffed toy bargain bin,false,,13426057992,,Bear in green dress,💚, £9.99
-Toy - Irish TY bear,Stuffed toy bargain bin,false,,19392371497,,Irish TY bear,☘️, £9.99
-Toy - Breast Cancer Bear,Stuffed toy bargain bin,false,,17287434921,,Breast Cancer Bear,🎗️, £9.99
-Toy - Ugly dog,Stuffed toy bargain bin,false,,14197305049,,Ugly dog,👹, £9.99
-Toy - Dome 2000 Bear,Stuffed toy bargain bin,false,,11027330722,,Dome 2000 Bear,🏛️, £9.99
-Toy - Gangle bear flinging another bear,Stuffed toy bargain bin,false,,15643891171,,Gangle bear flinging another bear,🤸, £9.99
-Toy - Duck wiith hat,Stuffed toy bargain bin,false,,11570353520,,Duck wiith hat,🎩, £9.99
-Toy - Classic Bear with bowtie,Stuffed toy bargain bin,false,,15592605369,,Classic Bear with bowtie,🎀, £9.99
-Toy - Farmer Rabbit,Stuffed toy bargain bin,false,,16273568132,,Farmer Rabbit,🧑‍🌾, £9.99
-Toy - Small classic bear with ribbon,Stuffed toy bargain bin,false,,18483172690,,Small classic bear with ribbon,🎗️, £9.99
-Toy - Great dane with red collar,Stuffed toy bargain bin,false,,13245602561,,Great dane with red collar,❤️‍🩹, £9.99
-Toy - Small default bear ,Stuffed toy bargain bin,false,,14074716438,,Small default bear ,🐻, £9.99
-Toy - Tiny cat with ribbon,Stuffed toy bargain bin,false,,16584284684,,Tiny cat with ribbon,🐈, £9.99
-Toy - Green football beanie baby,Stuffed toy bargain bin,false,,17876583881,,Green football beanie baby,🏈, £9.99
-Toy - Bear with yellow bow tie and patterned feet,Stuffed toy bargain bin,false,,14121769356,,Bear with yellow bow tie and patterned feet,🐻, £9.99
-Toy - Lady (from Lady and the Tramp),Stuffed toy bargain bin,false,,10154074472,,Lady (from Lady and the Tramp),🐕, £9.99
-Toy - Purple Rabbit in suspenders,Stuffed toy bargain bin,false,,11766145257,,Purple Rabbit in suspenders,🐇, £9.99
-Toy - Ugly Dog 2,Stuffed toy bargain bin,false,,12496899678,,Ugly Dog 2,👺, £9.99
-Toy - Pink spotty rabbit,Stuffed toy bargain bin,false,,18613891979,,Pink spotty rabbit,🌸, £9.99
-Toy - Lady (from Lady and the Tramp) 2 - with label,Stuffed toy bargain bin,false,,10514870627,,Lady (from Lady and the Tramp) 2 - with label,🦮, £9.99
-Toy - Aviation bear with jacket too big,Stuffed toy bargain bin,false,,16692560533,,Aviation bear with jacket too big,✈️, £9.99
-Toy - Pink Rabbit with ribbon,Stuffed toy bargain bin,false,,19563297747,,Pink Rabbit with ribbon,🎀, £9.99
-Toy - Bear in hood,Stuffed toy bargain bin,false,,19723534484,,Bear in hood,🧥, £9.99
-"Toy - Bear with ""Happy Bear"" on feet",Stuffed toy bargain bin,false,,18870727959,,"Bear with ""Happy Bear"" on feet",😄, £9.99
-Toy - Bear with Christmas hat,Stuffed toy bargain bin,false,,17525089636,,Bear with Christmas hat,🎅, £9.99
-Toy - Decapitated bear,Stuffed toy bargain bin,false,,19010502639,,Decapitated bear,✂️, £9.99
-Toy - 2002 Fifa World Cup Bear,Stuffed toy bargain bin,false,,14166443706,,2002 Fifa World Cup Bear,⚽, £9.99
-Toy - Connoseuir Bear Collection Bear,Stuffed toy bargain bin,false,,11455916102,,Connoseuir Bear Collection Bear,🧐, £9.99
-Toy - Eeyore,Stuffed toy bargain bin,false,,13563263525,,Eeyore,🫏, £9.99
-Toy - Andrex Dog,Stuffed toy bargain bin,false,,15931934818,,Andrex Dog,🧻, £9.99
-Toy - Bugs life ant,Stuffed toy bargain bin,false,,10651068826,,Bugs life ant,🐜, £9.99
-Toy - Hard christmas bear,Stuffed toy bargain bin,false,,15245979790,,Hard christmas bear,🐻‍❄️, £9.99
-Toy - Hard white bear,Stuffed toy bargain bin,false,,13213527278,,Hard white bear,🐻‍❄️, £9.99
-Toy - Small tabby cat,Stuffed toy bargain bin,false,,15871495094,,Small tabby cat,😼, £9.99
-Toy - Orange TY bear,Stuffed toy bargain bin,false,,15544057651,,Orange TY bear,🧸, £9.99
-Fish - Shrimp,Fish counter,false, Small?,25277759410,,Shrimp,🦐, £9.99
-Biscuits,Fish counter,false,Probably?,21909488436,,Biscuits,🍪, £9.99
-Spiders - Can 1 tbc,Spiders,false,,30901119753,,qq 1,🕷️, £9.99
-Spiders - Can 2 tbc,Spiders,false,,35382222523,,qq 2,🕷️, £9.99
-Spiders - Can 3 tbc,Spiders,false,,37487631170,,qq 3,🕷️, £9.99
-Spiders - Can 4 tbc,Spiders,false,,36321484008,,qq 3,🕷️, £9.99
-Cloudy bottle 1,Cloudy bottles,true,,41643647779,,,🍾, £9.99
-Cloudy bottle 2,Cloudy bottles,true,,43265511723,,,🍾, £9.99
-Cloudy bottle 3,Cloudy bottles,true,,44811944649,,,🍾, £9.99
-Cloudy bottle 4,Cloudy bottles,true,,46238363281,,,🍾, £9.99
-Cloudy bottle 5,Cloudy bottles,true,,48929411003,,,🍾, £9.99
-Cloudy bottle 6,Cloudy bottles,true,,43458414950,,,🍾, £9.99
-Cloudy bottle 7,Cloudy bottles,true,,42115242058,,,🍾, £9.99
-Cloudy bottle 8,Cloudy bottles,true,,44076566442,,,🍾, £9.99
-Cloudy bottle 9,Cloudy bottles,true,,41718935937,,,🍾, £9.99
-Cloudy bottle 10,Cloudy bottles,true,,42948612044,,,🍾, £9.99
-Cloudy bottle 11,Cloudy bottles,true,,47934302729,,,🍾, £9.99
-Cloudy bottle 12,Cloudy bottles,true,,49129171068,,,🍾, £9.99
-Alcohol 1,Challenge 75,false,,68892163345,,Booze,🍷, £9.99
-Alcohol 2,Challenge 75,false,,61220782309,,More booze,🍺, £9.99
-Alcohol 3,Challenge 75,false,,66108639075,,Tasty booze,🥃, £9.99
-Innocent Smoothie Large,NO PUZZLE,false,,02677402218,,,🥤, £9.99
-Innocent Smoothie Small,NO PUZZLE,false,,06230935394,,,🧃, £9.99
-Eggbox 1,Eggbox,true,,87377604543,,,🥚, £9.99
-Eggbox 2,Eggbox,true,,87140917429,,,🥚, £9.99
-Eggbox 3,Eggbox,true,,89682814640,,,🥚, £9.99
-Eggbox 4,Eggbox,true,,83479001742,,,🥚, £9.99
-Eggbox 5,Eggbox,true,,82982988540,,,🥚, £9.99
-Eggbox 6,Eggbox,true,,82004527303,,,🥚, £9.99
-Eggbox 7,Eggbox,true,,86535838013,,,🥚, £9.99
-Eggbox 8,Eggbox,true,,87115936454,,,🥚, £9.99
-Eggbox 9,Eggbox,true,,87094019215,,,🥚, £9.99
-Eggbox 10,Eggbox,true,,89487082929,,,🥚, £9.99
-Eggbox 11,Eggbox,true,,84134061708,,,🥚, £9.99
-Eggbox 12,Eggbox,true,,81157308547,,,🥚, £9.99
-Endoscope,Barcode Tea Halves,true,For lolz,70844444597,,Zendoscope,🩺, £9.99
-Checkout,NO PUZZLE,false,For lolz,02961192512,,Checkout,🛒, £9.99
+Human Id [DO NOT EDIT AFTER PRINTING BARCODE],Puzzle,Debug Character,Offer,Checkout name,Barcode,Duplicate Check,Stickers?,Checkout emoji,Notes,Price,Printed?
+Pringles - APPLE & ANCHOVY,Pringles,,,Pringles - Apple & Anchovy,57302240527,,true,🍏,, £9.99,true
+Pringles - BACON & BLUEBERRY,Pringles,,,Pringles - Bacon & Blueberry,56677010616,,true,🥓,, £9.99,true
+Pringles - BLACK PUDDING & RUM,Pringles,,,Pringles - Black Pudding & Rum,59749910396,,true,🍮,, £9.99,true
+Pringles - BLACKBERRY CRUMBLE,Pringles,,,Pringles - Blackberry Crumble,55992714706,,false,🫐,, £9.99,false
+Pringles - BLACKCURRANT,Pringles,q,Pringles,Pringles - Blackcurrant,52099584023,,true,🍇,, £9.99,true
+Pringles - BUBBLEGUM,Pringles,,,Pringles - Bubblegum,51049035540,,true,🍬,, £9.99,true
+Pringles - CARROT & CHIVE,Pringles,,,Pringles - Carrot & Chive,56959482109,,true,🥕,, £9.99,true
+Pringles - CARROT CAKE SUNDAE,Pringles,,,Pringles - Carrot Cake Sundae,58863383986,,false,🥕,,,false
+Pringles - CARROTS & DAIKON,Pringles,,,Pringles - Carrots & Daikon,50793552677,,true,🥕,, £9.99,true
+Pringles - CHILLI & CARDAMOM,Pringles,,,Pringles - Chilli & Cardamom,59344808503,,true,🌶️,, £9.99,true
+Pringles - CINAMMON & REDCURRANT,Pringles,,,Pringles - Cinammon & Redcurrant,53719101946,,true,✨,, £9.99,true
+Pringles - EGG & CRESS,Pringles,,,Pringles - Egg & Cress,51604998593,,true,🥚,, £9.99,true
+Pringles - GANGLAND,Pringles,,,Pringles - Gangland,55715376075,,true,🕵️,, £9.99,true
+Pringles - HAM & CHEESE,Pringles,,,Pringles - Ham & Cheese,51826487992,,true,🍖,, £9.99,true
+Pringles - KIWI & KOALA,Pringles,,,Pringles - Kiwi & Koala,59993259495,,true,🥝,, £9.99,true
+Pringles - MARMOT,Pringles,,,Pringles - Marmot,51052505002,,true,🐿️,, £9.99,true
+Pringles - NUT,Pringles,,,Pringles - Nut,55950226934,,true,🥜,, £9.99,true
+Pringles - OLIVE & RICOTTA,Pringles,,,Pringles - Olive & Ricotta,58174194722,,true,🫒,, £9.99,true
+Pringles - PEAR & GIN,Pringles,,,Pringles - Pear & Gin,52330177833,,true,🍐,, £9.99,true
+Pringles - PLOUGHMAN'S SANDWICH,Pringles,r,,Pringles - Ploughman's Sandwich,54666953450,,true,🥪,, £9.99,true
+Pringles - PORK & PINEAPPLE,Pringles,,,Pringles - Pork & Pineapple,52162349818,,true,🐖,, £9.99,true
+Pringles - QQ A FLAVOUR,Pringles,,,Pringles - QQ a flavour,59086315545,,false,,, £9.99,false
+Pringles - RED HERRING,Pringles,,,Pringles - Red Herring,51714639799,,true,🐟,, £9.99,true
+Pringles - SALTED MANGO,Pringles,,,Pringles - Salted Mango,55955614963,,true,🥭,, £9.99,true
+Pringles - SMURF,Pringles,,,Pringles - Smurf,53552222562,,true,👤,, £9.99,true
+Pringles - SOY SAUCE,Pringles,,,Pringles - Soy Sauce,58463963615,,true,🍶,, £9.99,true
+Pringles - STICKY TOFFEE PUDDING,Pringles,,,Pringles - Sticky Toffee Pudding,53233136428,,true,🍮,, £9.99,true
+Pringles - STRAWBERRY & SHALLOT,Pringles,w,Pringles,Pringles - Strawberry & Shallot,58858307222,,true,🍓,, £9.99,true
+Pringles - SWEET POTATO & SWEET PEA,Pringles,e,,Pringles - Sweet Potato & Sweet Pea,56459173249,,true,🍠,, £9.99,true
+Pringles - VANILLA,Pringles,,,Pringles - Vanilla,52345396642,,true,🍦,, £9.99,true
+Tea - Real 1,Zen Tea,t,Zen Tea,qq tea 1,73471250365,,false,☕," Needs custom, larger barcode", £9.99,false
+Tea - Real 2,Zen Tea,,,qq tea 2,73794136875,,false,☕," Needs custom, larger barcode", £9.99,false
+Tea - Real 3,Zen Tea,,,qq tea 3,79562546486,,false,☕," Needs custom, larger barcode", £9.99,false
+Tea - Fake 1,Zen Tea,y,,qq tea 4,78655479036,,false,❌," Needs custom, larger barcode", £9.99,false
+Tea - Fake 2,Zen Tea,u,,qq tea 5,75254280275,,false,❌," Needs custom, larger barcode", £9.99,false
+Tea - Fake 3,Zen Tea,,,qq tea 6,70109130377,,false,❌," Needs custom, larger barcode", £9.99,false
+Toy - Mouse,Stuffed toy bargain bin,i,Toys,Mouse,18318168487,,true,🐁,, £9.99,true
+Toy - Kiwi,Stuffed toy bargain bin,o,Toys,Kiwi,18219486339,,true,🥝,, £9.99,true
+Toy - Bat,Stuffed toy bargain bin,p,Toys,Bat,10041577460,,true,🦇,, £9.99,true
+Toy - Dog with sweatband,Stuffed toy bargain bin,a,,Dog with sweatband,16372542937,,false,🐶,, £9.99,false
+Toy - Frog,Stuffed toy bargain bin,,,Frog,15072691904,,false,🐸,, £9.99,false
+Toy - St. Bernard,Stuffed toy bargain bin,,,St. Bernard,11309645918,,false,🐕,, £9.99,false
+Toy - Blue duck,Stuffed toy bargain bin,,,Blue duck,17022392397,,false,🦆,, £9.99,false
+Toy - Fox shaped like racoon,Stuffed toy bargain bin,s,,Fox shaped like racoon,15600293757,,false,🦊,, £9.99,false
+Toy - Macaw,Stuffed toy bargain bin,,,Macaw,10105161154,,false,🦜,, £9.99,false
+Toy - Multicoloured Fish,Stuffed toy bargain bin,,,Multicoloured Fish,19202467553,,false,🐠,, £9.99,false
+Toy - Rabbit with rabbit feet (yellow),Stuffed toy bargain bin,,,Rabbit with rabbit feet (yellow),13623827249,,false,🐰,, £9.99,false
+Toy - Rabbit with rabbit feet (green),Stuffed toy bargain bin,,,Rabbit with rabbit feet (green),12701699288,,false,🐇,, £9.99,false
+Toy - Very soft dog,Stuffed toy bargain bin,,,Very soft dog,15602453187,,false,🧸,, £9.99,false
+Toy - Big Kangaroo,Stuffed toy bargain bin,,,Big Kangaroo,13746422312,,false,🦘,, £9.99,false
+Toy - Elephant with straggly hair,Stuffed toy bargain bin,,,Elephant with straggly hair,14612665041,,false,🐘,, £9.99,false
+Toy - Purple Poodle,Stuffed toy bargain bin,,,Purple Poodle,19093346029,,false,🐩,, £9.99,false
+Toy - Soft Meercat,Stuffed toy bargain bin,,,Soft Meercat,10543266723,,false,🦦,, £9.99,false
+Toy - Tiger,Stuffed toy bargain bin,,,Tiger,14600254365,,false,🐅,, £9.99,false
+Toy - Husky,Stuffed toy bargain bin,,,Husky,18665582427,,false,🐺,, £9.99,false
+Toy - Black Dog Merlin,Stuffed toy bargain bin,,,Black Dog Merlin,11273524340,,false,🖤,, £9.99,false
+Toy - Ram with heart tattoo,Stuffed toy bargain bin,,,Ram with heart tattoo,18921576033,,false,🐏,, £9.99,false
+Toy - Pig looking up and left,Stuffed toy bargain bin,,,Pig looking up and left,15550756952,,false,🐷,, £9.99,false
+Toy - Seal with bad face,Stuffed toy bargain bin,,,Seal with bad face,13346405325,,false,🦭,, £9.99,false
+Toy - Aviation Bear,Stuffed toy bargain bin,,,Aviation Bear,16506819134,,false,🐻,, £9.99,false
+Toy - Lion,Stuffed toy bargain bin,,,Lion,19782458776,,false,🦁,, £9.99,false
+Toy - Royal Mail Bear,Stuffed toy bargain bin,,,Royal Mail Bear,11822543264,,false,📮,, £9.99,false
+Toy - Tomato with face,Stuffed toy bargain bin,,,Tomato with face,10042909025,,false,🍅,, £9.99,false
+Toy - My heart belongs to you rabbit,Stuffed toy bargain bin, d,,My heart belongs to you rabbit,14409732165,,false,❤️,, £9.99,false
+Toy - Green-blue ty bear (big),Stuffed toy bargain bin,,,Green-blue ty bear (big),18500893815,,false,💚,, £9.99,false
+Toy - 200TY bear (big),Stuffed toy bargain bin,,,200TY bear (big),14755411915,,false,💯,, £9.99,false
+Toy - Dog with collar,Stuffed toy bargain bin,,,Dog with collar,15224051649,,false,🐕‍🦺,, £9.99,false
+Toy - Dog with tongue out,Stuffed toy bargain bin,,,Dog with tongue out,13729737107,,false,😛,, £9.99,false
+Toy - Rabbit with wallpaper feet,Stuffed toy bargain bin,,,Rabbit with wallpaper feet,18343934310,,false,🐰,, £9.99,false
+Toy - Small kangaroo,Stuffed toy bargain bin,,,Small kangaroo,19423502079,,false,🦘,, £9.99,false
+Toy - Pig sitting sideways,Stuffed toy bargain bin,,,Pig sitting sideways,15740894304,,false,🐖,, £9.99,false
+Toy - Dalmatian,Stuffed toy bargain bin,,,Dalmatian,12040798438,,false,🐾,, £9.99,false
+Toy - Rabbit with wallpaper feet 2,Stuffed toy bargain bin,,,Rabbit with wallpaper feet 2,17014156913,,false,🐇,, £9.99,false
+Toy - Pink rabbit,Stuffed toy bargain bin,,,Pink rabbit,18537522800,,false,🩷,, £9.99,false
+Toy - Mangy tiger,Stuffed toy bargain bin,,,Mangy tiger,10776908525,,false,🐅,, £9.99,false
+Toy - Frilly Cow,Stuffed toy bargain bin,,,Frilly Cow,17077164458,,false,🐄,, £9.99,false
+Toy - Boxing Gorilla,Stuffed toy bargain bin,,,Boxing Gorilla,11374086438,,false,🦍,, £9.99,false
+Toy - Black ape with leather appendages,Stuffed toy bargain bin,,,Black ape with leather appendages,14935431938,,false,🖤,, £9.99,false
+Toy - Monkey with bow and shorts,Stuffed toy bargain bin,,,Monkey with bow and shorts,10647413587,,false,🐒,, £9.99,false
+Toy - Dog from basket,Stuffed toy bargain bin,,,Dog from basket,19068624986,,false,🧺,, £9.99,false
+Toy - Puppy from basket 1,Stuffed toy bargain bin,,,Puppy from basket 1,16551862248,,false,🐶,, £9.99,false
+Toy - Puppy from basket 2,Stuffed toy bargain bin,,,Puppy from basket 2,14050876911,,false,🐾,, £9.99,false
+Toy - Small white bear with red ribbon,Stuffed toy bargain bin,,,Small white bear with red ribbon,17380424546,,false,🤍,, £9.99,false
+Toy - Soft orange-brown bear with brown ribbon,Stuffed toy bargain bin,g,,Soft orange-brown bear with brown ribbon,11247774458,,false,🧡,, £9.99,false
+Toy - Soft cream bear with red ribbon,Stuffed toy bargain bin,,,Soft cream bear with red ribbon,10801140033,,false,💛,, £9.99,false
+Toy - Blue ty bear,Stuffed toy bargain bin,,,Blue ty bear,14565946562,,false,💙,, £9.99,false
+Toy - Hard rock cafe honolulu bear,Stuffed toy bargain bin,,,Hard rock cafe honolulu bear,10758105679,,false,🎸,, £9.99,false
+Toy - Generic rabbit-bear with yellow bow,Stuffed toy bargain bin,,,Generic rabbit-bear with yellow bow,12811863583,,false,🧸,, £9.99,false
+Toy - Dirty cream bear,Stuffed toy bargain bin,,,Dirty cream bear,13877407251,,false,🐻‍❄️,, £9.99,false
+Toy - Bear in green dress,Stuffed toy bargain bin,,,Bear in green dress,13426057992,,false,💚,, £9.99,false
+Toy - Irish TY bear,Stuffed toy bargain bin,,,Irish TY bear,19392371497,,false,☘️,, £9.99,false
+Toy - Breast Cancer Bear,Stuffed toy bargain bin,,,Breast Cancer Bear,17287434921,,false,🎗️,, £9.99,false
+Toy - Ugly dog,Stuffed toy bargain bin,,,Ugly dog,14197305049,,false,👹,, £9.99,false
+Toy - Dome 2000 Bear,Stuffed toy bargain bin,,,Dome 2000 Bear,11027330722,,false,🏛️,, £9.99,false
+Toy - Gangle bear flinging another bear,Stuffed toy bargain bin,,,Gangle bear flinging another bear,15643891171,,false,🤸,, £9.99,false
+Toy - Duck wiith hat,Stuffed toy bargain bin,,,Duck wiith hat,11570353520,,false,🎩,, £9.99,false
+Toy - Classic Bear with bowtie,Stuffed toy bargain bin,,,Classic Bear with bowtie,15592605369,,false,🎀,, £9.99,false
+Toy - Farmer Rabbit,Stuffed toy bargain bin,,,Farmer Rabbit,16273568132,,false,🧑‍🌾,, £9.99,false
+Toy - Small classic bear with ribbon,Stuffed toy bargain bin,,,Small classic bear with ribbon,18483172690,,false,🎗️,, £9.99,false
+Toy - Great dane with red collar,Stuffed toy bargain bin,,,Great dane with red collar,13245602561,,false,❤️‍🩹,, £9.99,false
+Toy - Small default bear ,Stuffed toy bargain bin,,,Small default bear ,14074716438,,false,🐻,, £9.99,false
+Toy - Tiny cat with ribbon,Stuffed toy bargain bin,,,Tiny cat with ribbon,16584284684,,false,🐈,, £9.99,false
+Toy - Green football beanie baby,Stuffed toy bargain bin,,,Green football beanie baby,17876583881,,false,🏈,, £9.99,false
+Toy - Bear with yellow bow tie and patterned feet,Stuffed toy bargain bin,,,Bear with yellow bow tie and patterned feet,14121769356,,false,🐻,, £9.99,false
+Toy - Lady (from Lady and the Tramp),Stuffed toy bargain bin,,,Lady (from Lady and the Tramp),10154074472,,false,🐕,, £9.99,false
+Toy - Purple Rabbit in suspenders,Stuffed toy bargain bin,,,Purple Rabbit in suspenders,11766145257,,false,🐇,, £9.99,false
+Toy - Ugly Dog 2,Stuffed toy bargain bin,,,Ugly Dog 2,12496899678,,false,👺,, £9.99,false
+Toy - Pink spotty rabbit,Stuffed toy bargain bin,,,Pink spotty rabbit,18613891979,,false,🌸,, £9.99,false
+Toy - Lady (from Lady and the Tramp) 2 - with label,Stuffed toy bargain bin,,,Lady (from Lady and the Tramp) 2 - with label,10514870627,,false,🦮,, £9.99,false
+Toy - Aviation bear with jacket too big,Stuffed toy bargain bin,,,Aviation bear with jacket too big,16692560533,,false,✈️,, £9.99,false
+Toy - Pink Rabbit with ribbon,Stuffed toy bargain bin,,,Pink Rabbit with ribbon,19563297747,,false,🎀,, £9.99,false
+Toy - Bear in hood,Stuffed toy bargain bin,,,Bear in hood,19723534484,,false,🧥,, £9.99,false
+"Toy - Bear with ""Happy Bear"" on feet",Stuffed toy bargain bin,,,"Bear with ""Happy Bear"" on feet",18870727959,,false,😄,, £9.99,false
+Toy - Bear with Christmas hat,Stuffed toy bargain bin,,,Bear with Christmas hat,17525089636,,false,🎅,, £9.99,false
+Toy - Decapitated bear,Stuffed toy bargain bin,,,Decapitated bear,19010502639,,false,✂️,, £9.99,false
+Toy - 2002 Fifa World Cup Bear,Stuffed toy bargain bin,,,2002 Fifa World Cup Bear,14166443706,,false,⚽,, £9.99,false
+Toy - Connoseuir Bear Collection Bear,Stuffed toy bargain bin,,,Connoseuir Bear Collection Bear,11455916102,,false,🧐,, £9.99,false
+Toy - Eeyore,Stuffed toy bargain bin,,,Eeyore,13563263525,,false,🫏,, £9.99,false
+Toy - Andrex Dog,Stuffed toy bargain bin,,,Andrex Dog,15931934818,,false,🧻,, £9.99,false
+Toy - Bugs life ant,Stuffed toy bargain bin,,,Bugs life ant,10651068826,,false,🐜,, £9.99,false
+Toy - Hard christmas bear,Stuffed toy bargain bin,,,Hard christmas bear,15245979790,,false,🐻‍❄️,, £9.99,false
+Toy - Hard white bear,Stuffed toy bargain bin,,,Hard white bear,13213527278,,false,🐻‍❄️,, £9.99,false
+Toy - Small tabby cat,Stuffed toy bargain bin,,,Small tabby cat,15871495094,,false,😼,, £9.99,false
+Toy - Orange TY bear,Stuffed toy bargain bin,,,Orange TY bear,15544057651,,false,🧸,, £9.99,false
+Fish - Shrimp,Fish counter,h,Shrimp Biscuit,Shrimp,25277759410,,false,🦐, Small?, £9.99,false
+Biscuits,Fish counter,j,Shrimp Biscuit,Biscuits,21909488436,,false,🍪,Probably?, £9.99,false
+Spiders - Can 1 tbc,Spiders,k,,Spiders qq 1,30901119753,,false,🕷️,, £9.99,false
+Spiders - Can 2 tbc,Spiders,l,,Spider qq 2,35382222523,,false,🕷️,, £9.99,false
+Spiders - Can 3 tbc,Spiders,,,Spiders qq 3,37487631170,,false,🕷️,, £9.99,false
+Spiders - Can 4 tbc,Spiders,,,Spiders qq 4,36321484008,,false,🕷️,, £9.99,false
+Cloudy bottle 1,Cloudy bottles,z,qq Cloudy,qq Cloudy bottle 1,41643647779,,true,🍾,, £9.99,true
+Cloudy bottle 2,Cloudy bottles,x,qq Cloudy,qq Cloudy bottle 2,43265511723,,true,🍾,, £9.99,true
+Cloudy bottle 3,Cloudy bottles,,,qq Cloudy bottle 3,44811944649,,true,🍾,, £9.99,true
+Cloudy bottle 4,Cloudy bottles,,,qq Cloudy bottle 4,46238363281,,true,🍾,, £9.99,true
+Cloudy bottle 5,Cloudy bottles,,,qq Cloudy bottle 5,48929411003,,true,🍾,, £9.99,true
+Cloudy bottle 6,Cloudy bottles,,,qq Cloudy bottle 6,43458414950,,true,🍾,, £9.99,true
+Cloudy bottle 7,Cloudy bottles,,,qq Cloudy bottle 7,42115242058,,true,🍾,, £9.99,true
+Cloudy bottle 8,Cloudy bottles,,,qq Cloudy bottle 8,44076566442,,true,🍾,, £9.99,true
+Cloudy bottle 9,Cloudy bottles,,,qq Cloudy bottle 9,41718935937,,true,🍾,, £9.99,true
+Cloudy bottle 10,Cloudy bottles,,,qq Cloudy bottle 10,42948612044,,true,🍾,, £9.99,true
+Cloudy bottle 11,Cloudy bottles,,,qq Cloudy bottle 11,47934302729,,true,🍾,, £9.99,true
+Cloudy bottle 12,Cloudy bottles,,,qq Cloudy bottle 12,49129171068,,true,🍾,, £9.99,true
+Alcohol 1,Challenge 75,c,Alcohol,Booze,68892163345,,false,🍷,, £9.99,false
+Alcohol 2,Challenge 75,v,,More booze,61220782309,,false,🍺,, £9.99,false
+Alcohol 3,Challenge 75,,,Tasty booze,66108639075,,false,🥃,, £9.99,false
+Innocent Smoothie Large,NO PUZZLE,,,Innocent Smoothie Large,02677402218,,false,🥤,, £9.99,false
+Innocent Smoothie Small,NO PUZZLE,,,Innocent Smoothie Small,06230935394,,false,🧃,, £9.99,false
+Eggbox 1,Eggbox,b,qq Eggs,qq Eggbox 1,87377604543,,true,🥚,, £9.99,true
+Eggbox 2,Eggbox,n,qq Eggs,qq Eggbox 2,87140917429,,true,🥚,, £9.99,true
+Eggbox 3,Eggbox,,,qq Eggbox 3,89682814640,,true,🥚,, £9.99,true
+Eggbox 4,Eggbox,,,qq Eggbox 4,83479001742,,true,🥚,, £9.99,true
+Eggbox 5,Eggbox,,,qq Eggbox 5,82982988540,,true,🥚,, £9.99,true
+Eggbox 6,Eggbox,,,qq Eggbox 6,82004527303,,true,🥚,, £9.99,true
+Eggbox 7,Eggbox,,,qq Eggbox 7,86535838013,,true,🥚,, £9.99,true
+Eggbox 8,Eggbox,,,qq Eggbox 8,87115936454,,true,🥚,, £9.99,true
+Eggbox 9,Eggbox,,,qq Eggbox 9,87094019215,,true,🥚,, £9.99,true
+Eggbox 10,Eggbox,,,qq Eggbox 10,89487082929,,true,🥚,, £9.99,true
+Eggbox 11,Eggbox,,,qq Eggbox 11,84134061708,,true,🥚,, £9.99,true
+Eggbox 12,Eggbox,,,qq Eggbox 12,81157308547,,true,🥚,, £9.99,true
+Endoscope,Zen Tea,,,Zendoscope,70844444597,,true,🩺,For lolz, £9.99,true
+Checkout,NO PUZZLE,,,Checkout,02961192512,,false,🛒,For lolz, £9.99,false
+Driver's Licence,Challenge 75,,,Driver's Licence,62776186430,,true,🪪,,,false

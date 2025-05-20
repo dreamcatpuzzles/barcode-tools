@@ -47,6 +47,33 @@
         <div id="controls">
             <marquee><h1 style="font-family: Comic Sans MS;">Barcode-a-tron 3000</h1></marquee>
             <form>
+                <h2>Barcode lookup zone</h2>
+                <div>
+                    <label for="barcode-lookup">Lookup Barcode:</label>
+                    <input type="text" id="barcode-lookup" placeholder="Enter barcode to search" oninput="lookupBarcode()" onkeydown="preventFormSubmit(event)">
+                    <div id="lookup-result" style="margin-top: 10px; padding: 10px; border: 1px solid #ddd; display: none;"></div>
+                </div>
+            </form>
+            <hr />
+            <form>
+                <h2>CSV to JSON zone</h2>
+                <div>
+                    <label for="csv-file">Upload CSV export of Grist barcodes table:</label>
+                    <input type="file" id="csv-file" accept=".csv">
+                    <button type="button" onclick="parseCSV()">Parse CSV</button>
+                </div>
+                <h3>barcodes.json</h3>
+                <div id="json-output-container" style="margin-top: 10px;">
+                    <pre id="json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
+                </div>
+                <h3>offers.json</h3>
+                <div id="offers-json-output-container" style="margin-top: 10px;">
+                    <pre id="offers-json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
+                </div>
+            </form>
+            <hr />
+            <form>
+                <h2>Barcode rendering zone</h2>
                 <label for="barcodes-list">Barcodes:</label>
                 <textarea id="barcodes-list" name="barcodes">57302240527
 56677010616
@@ -57,22 +84,9 @@
 50793552677
 59344808503</textarea>
                 <button type="button" onclick="render()">Render</button>
-                <marquee>Don't worry, this area won't get printed!</marquee>
-                <hr>
-                <div>
-                    <label for="csv-file">Upload CSV export of Grist barcodes table:</label>
-                    <input type="file" id="csv-file" accept=".csv">
-                    <button type="button" onclick="parseCSV()">Parse CSV</button>
-                </div>
-                <div id="json-output-container" style="margin-top: 10px;">
-                    <pre id="json-output" style="max-height: 300px; overflow: auto; border: 1px solid #ccc; padding: 10px;"></pre>
-                </div>
-                <div style="margin-top: 15px;">
-                    <label for="barcode-lookup">Lookup Barcode:</label>
-                    <input type="text" id="barcode-lookup" placeholder="Enter barcode to search" oninput="lookupBarcode()" onkeydown="preventFormSubmit(event)">
-                    <div id="lookup-result" style="margin-top: 10px; padding: 10px; border: 1px solid #ddd; display: none;"></div>
-                </div>
             </form>
+            <marquee>Don't worry, this area won't get printed!</marquee>
+            <hr />
         </div>
         <div id="barcode-container">
 
@@ -122,6 +136,7 @@
             
             function parseCSVData(csvData) {
                 const jsonOutput = document.getElementById('json-output');
+                const offersJsonOutput = document.getElementById('offers-json-output');
                 const lines = csvData.split('\n');
                 const headers = lines[0].split(',');
                 
@@ -130,15 +145,18 @@
                 const nameIndex = headers.findIndex(header => header.trim() === 'Checkout name');
                 const priceIndex = headers.findIndex(header => header.trim() === 'Price');
                 const iconIndex = headers.findIndex(header => header.trim() === 'Checkout emoji');
-                
-                if (barcodeIndex === -1 || nameIndex === -1 || priceIndex === -1 || iconIndex === -1) {
+                const debugCharIndex = headers.findIndex(header => header.trim() === 'Debug Character');
+                const offerIndex = headers.findIndex(header => header.trim() === 'Offer');
+
+                if (barcodeIndex === -1 || nameIndex === -1 || priceIndex === -1 || iconIndex === -1 || debugCharIndex === -1) {
                     if (jsonOutput) {
-                        jsonOutput.textContent = 'Error: CSV file must contain Barcode, Checkout name, Price, and Checkout emoji columns';
+                        jsonOutput.textContent = 'Error: CSV file must contain Barcode, Checkout name, Price, Checkout emoji, and Debug Character columns';
                     }
                     return null;
                 }
                 
                 const result = {};
+                const offers = new Map();
                 
                 // Start from index 1 to skip headers
                 for (let i = 1; i < lines.length; i++) {
@@ -170,6 +188,8 @@
                     const name = values[nameIndex] ? values[nameIndex].trim() : '';
                     const priceStr = values[priceIndex] ? values[priceIndex].trim() : '';
                     const icon = values[iconIndex] ? values[iconIndex].trim() : '';
+                    const debugChar = values[debugCharIndex] ? values[debugCharIndex].trim() : '';
+                    const offer = values[offerIndex] ? values[offerIndex].trim() : '';
                     
                     // Convert price from £9.99 format to number
                     let price = 0;
@@ -183,8 +203,17 @@
                     result[barcode] = {
                         name: name,
                         price: price,
-                        icon: icon
+                        icon: icon,
+                        debugChar: debugChar,
                     };
+                    
+                    // Add to offers map
+                    if (offer) {
+                        if (!offers.has(offer)) {
+                            offers.set(offer, []);
+                        }
+                        offers.get(offer).push(name);
+                    }
                 }
                 
                 // Format and display the JSON if the output element exists
@@ -194,6 +223,15 @@
                 
                 // Store the parsed data in a global variable for lookup
                 window.barcodeData = result;
+                
+                // Generate offers JSON
+                if (offersJsonOutput) {
+                    const offersArray = Array.from(offers.entries()).map(([name, items]) => ({
+                        name,
+                        items: [...new Set(items)].sort() // Remove duplicates and sort
+                    }));
+                    offersJsonOutput.textContent = JSON.stringify(offersArray, null, 2);
+                }
                 
                 return result;
             }
