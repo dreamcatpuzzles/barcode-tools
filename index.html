@@ -208,7 +208,7 @@
                         if (!offers.has(offer)) {
                             offers.set(offer, []);
                         }
-                        offers.get(offer).push(name);
+                        offers.get(offer).push({barcode: barcode, name: name});
                     }
                 }
                 
@@ -222,10 +222,22 @@
                 
                 // Generate offers JSON
                 if (offersJsonOutput) {
-                    const offersArray = Array.from(offers.entries()).map(([name, items]) => ({
-                        name,
-                        items: [...new Set(items)].sort() // Remove duplicates and sort
-                    }));
+                    const offersArray = Array.from(offers.entries()).map(([name, items]) => {
+                        // Remove duplicates by barcode, keeping the first occurrence
+                        const uniqueItems = Array.from(new Map(
+                            items.map(item => [item.barcode, item])
+                        ).values());
+                        
+                        return {
+                            name,
+                            items: uniqueItems
+                                .sort((a, b) => a.name.localeCompare(b.name))
+                                .map(({barcode}) => barcode), // Only include barcodes in items array
+                            comment: uniqueItems
+                                .sort((a, b) => a.name.localeCompare(b.name))
+                                .map(({name}) => name) // Include names in comment array
+                        };
+                    });
                     offersJsonOutput.textContent = JSON.stringify(offersArray, null, 2);
                 }
                 
