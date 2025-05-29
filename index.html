@@ -143,6 +143,7 @@
                 const iconIndex = headers.findIndex(header => header.trim() === 'Checkout emoji');
                 const debugCharIndex = headers.findIndex(header => header.trim() === 'Debug Character');
                 const offerIndex = headers.findIndex(header => header.trim() === 'Offer');
+                const ageRestrictedIndex = headers.findIndex(header => header.trim() === 'Age Restricted');
 
                 if (barcodeIndex === -1 || nameIndex === -1 || priceIndex === -1 || iconIndex === -1 || debugCharIndex === -1) {
                     if (jsonOutput) {
@@ -186,6 +187,7 @@
                     const icon = values[iconIndex] ? values[iconIndex].trim() : '';
                     const debugChar = values[debugCharIndex] ? values[debugCharIndex].trim() : '';
                     const offer = values[offerIndex] ? values[offerIndex].trim() : '';
+                    const ageRestricted = values[ageRestrictedIndex] ? values[ageRestrictedIndex].trim() : '';
                     
                     // Convert price from £9.99 format to number
                     let price = 0;
@@ -201,6 +203,8 @@
                         price: price,
                         icon: icon,
                         debugChar: debugChar,
+                        offer: offer,
+                        ageRestricted: ageRestricted,
                     };
                     
                     // Add to offers map
