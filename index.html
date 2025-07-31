@@ -138,6 +138,7 @@
                 
                 // Find column indices
                 const barcodeIndex = headers.findIndex(header => header.trim() === 'Barcode');
+                const overrideBarcodeIndex = headers.findIndex(header => header.trim() === 'OverrideBarcode');
                 const nameIndex = headers.findIndex(header => header.trim() === 'Checkout name');
                 const priceIndex = headers.findIndex(header => header.trim() === 'Price');
                 const iconIndex = headers.findIndex(header => header.trim() === 'Checkout emoji');
@@ -179,7 +180,7 @@
                     }
                     values.push(currentValue); // Add the last value
                     
-                    const barcode = values[barcodeIndex].trim();
+                    const barcode = values[overrideBarcodeIndex].trim() || values[barcodeIndex].trim();
                     if (!barcode) continue;
                     
                     const name = values[nameIndex] ? values[nameIndex].trim() : '';
